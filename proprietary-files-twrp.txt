@@ -1,8 +1,8 @@
 # RECOVERY
 
 # RECOVERY_TOUCHSCREEN_FIRMWARE
-etc/firmware/touch_module_id_0xd0.img:recovery/root/etc/firmware/touch_module_id_0xd0.img
-etc/firmware/touch_module_id_0xd1.img:recovery/root/etc/firmware/touch_module_id_0xd1.img
+vendor/firmware/touch_module_id_0xd0.img:recovery/root/etc/firmware/touch_module_id_0xd0.img
+vendor/firmware/touch_module_id_0xd1.img:recovery/root/etc/firmware/touch_module_id_0xd1.img
 
 # RECOVERY_QSEECOM_FIRMWARE
 etc/firmware/cmnlib.b00:recovery/root/vendor/firmware/cmnlib.b00
