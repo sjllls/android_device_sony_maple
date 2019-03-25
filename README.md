@@ -28,10 +28,10 @@ How to build LineageOS
             <project name="cryptomilk/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" />
             <project name="cryptomilk/android_device_sony_common-treble" path="device/sony/common-treble" remote="github" />
             <project name="cryptomilk/android_device_sony_yoshino" path="device/sony/yoshino" remote="github" />
-            <project name="Myself5/android_device_sony_maple" path="device/sony/maple" remote="github" />
+            <project name="derfelot/android_device_sony_maple" path="device/sony/maple" remote="github" />
 
             <!-- Pinned blobs for maple -->
-            <project name="Myself5/android_vendor_sony_maple" path="vendor/sony/maple" remote="github" />
+            <project name="derfelot/android_vendor_sony_maple" path="vendor/sony/maple" remote="github" />
         </manifest>
 
 * Sync the repo:
