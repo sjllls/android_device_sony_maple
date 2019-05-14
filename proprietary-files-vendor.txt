@@ -584,6 +584,9 @@ vendor/lib64/libdpmqmihal.so
 vendor/bin/dpmQmiMgr
 
 # DRM
+vendor/bin/wvkbd
+vendor/bin/hw/android.hardware.drm@1.1-service.widevine
+vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
 vendor/lib/libwvhidl.so
 vendor/lib/libwvtee.so
 vendor/lib/mediadrm/libwvdrmengine.so
