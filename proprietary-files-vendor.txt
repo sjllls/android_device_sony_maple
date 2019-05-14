@@ -1007,6 +1007,7 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # RADIO
 vendor/bin/ATFWD-daemon
+vendor/bin/adpl
 vendor/bin/netmgrd
 vendor/bin/pd-mapper
 vendor/bin/port-bridge
