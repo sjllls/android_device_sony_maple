@@ -369,6 +369,7 @@ vendor/lib/hw/camera.qcom.so:vendor/lib/hw/camera.maple.so
 vendor/lib/libcameralight.so
 vendor/lib/libcammw.so
 vendor/lib/libcammw_util.so
+vendor/lib/libdualcameraddm.so
 vendor/lib/libexcal_core.so
 vendor/lib/libexcal_pal.so
 vendor/lib/libexcal_system.so
@@ -437,6 +438,7 @@ vendor/lib/vendor.somc.camera.device@3.3-impl.so
 vendor/lib/vendor.somc.camera.device@3.4-impl.so
 vendor/lib64/libcameralight.so
 vendor/lib64/libcammw_util.so
+vendor/lib64/libdualcameraddm.so
 vendor/lib64/libmmcamera_tintless_algo.so
 
 # CAMERA_CACAO
