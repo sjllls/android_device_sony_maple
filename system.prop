@@ -72,14 +72,14 @@ persist.vendor.overlay.izat.optin=rro
 ##### Add values MiscTA #####
 # /system/etc/prop.default
 ro.semc.version.sw=1307-7511
-ro.semc.version.sw_revision=47.2.A.10.45
+ro.semc.version.sw_revision=47.2.A.10.62
 ro.semc.version.sw_variant=GLOBAL-LTE4A
 ro.semc.version.sw_type=user
 
 # /system/build.prop
 ro.semc.ms_type_id=PM-1061-BV
 ro.semc.version.fs=GENERIC
-ro.semc.version.fs_revision=47.2.A.10.45
+ro.semc.version.fs_revision=47.2.A.10.62
 ro.semc.product.name=Xperia XZ Premium
 ro.semc.product.device=G81
 
