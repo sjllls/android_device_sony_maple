@@ -70,15 +70,15 @@ void target_load_properties()
         property_override_dual("ro.product.model", "ro.vendor.product.model", "G8142");
         property_override_dual("ro.product.name", "ro.vendor.product.name", "maple_dsds");
         property_override_dual("ro.product.device", "ro.vendor.product.device", "maple_dsds");
-        property_override("ro.build.description", "G8142-user 8.0.0 47.1.A.12.205 1908034680 release-keys");
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/G8142/G8142:8.0.0/47.1.A.12.205/1908034680:user/release-keys");
+        property_override("ro.build.description", "maple_dsds-user 9 YOSHINO-2.2.0-190425-1906 1 dev-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/maple_dsds/maple_dsds:9/YOSHINO-2.2.0-190425-1906/1:user/dev-keys");
     } else {
         property_set("ro.telephony.default_network", "10");
         property_set("ro.semc.product.model", "G8141");
         property_override_dual("ro.product.model", "ro.vendor.product.model", "G8141");
         property_override_dual("ro.product.name", "ro.vendor.product.name", "maple");
         property_override_dual("ro.product.device", "ro.vendor.product.device", "maple");
-        property_override("ro.build.description", "G8141-user 8.0.0 47.1.A.12.205 1908034680 release-keys");
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/G8141/G8141:8.0.0/47.1.A.12.205/1908034680:user/release-keys");
+        property_override("ro.build.description", "maple-user 9 YOSHINO-2.2.0-190425-1906 1 dev-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/maple/maple:9/YOSHINO-2.2.0-190425-1906/1:user/dev-keys");
     }
 }
