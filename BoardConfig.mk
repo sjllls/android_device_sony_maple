@@ -21,17 +21,15 @@ DEVICE_PATH := device/sony/maple
 
 PRODUCT_PLATFORM := yoshino
 
-# Init
-TARGET_LIBINIT_YOSHINO_DEFINES_FILE := $(DEVICE_PATH)/init_maple/init_maple.cpp
-TARGET_UNIFIED_DEVICE := true
-
 ### BOOTLOADER
-TARGET_BOOTLOADER_BOARD_NAME := G8141
+TARGET_BOOTLOADER_BOARD_NAME := G8142
 
 ### KERNEL
 TARGET_KERNEL_CONFIG := lineage-msm8998-yoshino-maple_defconfig
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=maple
+### TEMP
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 ### PARTITIONS
 # See also /proc/partitions on the device
@@ -42,6 +40,9 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 5242880000
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 # Reserve space for data encryption (23753875456-16384)
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 23753859072
+
+# Device witout a vendor partition
+TARGET_COPY_OUT_VENDOR := system/vendor
 
 ### LIGHTS
 TARGET_PROVIDES_LIBLIGHT := true
@@ -55,3 +56,6 @@ BOARD_MODEM_CUSTOMIZATIONS := true
 
 ### IMS
 BOARD_IMS_CAMERA := true
+
+### HIDL
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml

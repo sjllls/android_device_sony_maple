@@ -1,3 +1,7 @@
+# AUDIO_SOUNDTRIGGER
+lib/vendor.qti.voiceprint@1.0.so
+lib64/vendor.qti.voiceprint@1.0.so
+
 # BLUETOOTH
 lib/com.qualcomm.qti.bluetooth_audio@1.0.so
 lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
@@ -50,20 +54,16 @@ lib/vendor.somc.hardware.camera.device@1.0.so
 lib/vendor.somc.hardware.camera.provider@1.0.so
 lib64/libcacao_client.so
 lib64/libcacao_pal.so
-
-# CAMERA_POSTPROCESSING
-lib/libjni_imageutil.so:vendor/lib/libjni_imageutil.so
-lib/libjni_snapcammosaic.so:vendor/lib/libjni_snapcammosaic.so
-lib/libjni_snapcamtinyplanet.so:vendor/lib/libjni_snapcamtinyplanet.so
-lib/libseemore.so
-lib64/libjni_gallery_eglfence.so:vendor/lib64/libjni_gallery_eglfence.so
-lib64/libjni_gallery_filters.so:vendor/lib64/libjni_gallery_filters.so
-lib64/libjni_gallery_jpegstream.so:vendor/lib64/libjni_gallery_jpegstream.so
-lib64/libjni_imageutil.so:vendor/lib64/libjni_imageutil.so
-lib64/libjni_pacprocessor.so:vendor/lib64/libjni_pacprocessor.so
-lib64/libjni_snapcammosaic.so:vendor/lib64/libjni_snapcammosaic.so
-lib64/libjni_snapcamtinyplanet.so:vendor/lib64/libjni_snapcamtinyplanet.so
-lib64/libseemore.so
+lib/libjni_imageutil.so
+lib64/libjni_imageutil.so
+lib/libjni_snapcammosaic.so
+lib64/libjni_snapcammosaic.so
+lib/libjni_snapcamtinyplanet.so
+lib64/libjni_snapcamtinyplanet.so
+lib64/libjni_gallery_eglfence.so
+lib64/libjni_gallery_filters.so
+lib64/libjni_gallery_jpegstream.so
+lib64/libjni_pacprocessor.so
 
 # CLEANLOSTFOUND
 etc/cleanlostfound.sh
@@ -94,7 +94,18 @@ lib/libMiscTAApi.sony.so
 lib64/libMiscTAApi.sony.so
 lib/libMiscTaWrapper.so
 lib64/libMiscTaWrapper.so
--priv-app/CustomizationSelector/CustomizationSelector.apk
+-priv-app/CustomizationSelector/CustomizationSelector.apk|3ba848bedd61f131fc6dace852a357320925480d
+
+# DRM_HDCP
+etc/firmware/tzhdcp.b00
+etc/firmware/tzhdcp.b01
+etc/firmware/tzhdcp.b02
+etc/firmware/tzhdcp.b03
+etc/firmware/tzhdcp.b04
+etc/firmware/tzhdcp.b05
+etc/firmware/tzhdcp.b06
+etc/firmware/tzhdcp.b07
+etc/firmware/tzhdcp.mdt
 
 # DISPLAY
 etc/permissions/com.qti.snapdragon.sdk.display.xml
@@ -115,51 +126,28 @@ lib64/libsys-utils-system.so
 lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # DPM
+bin/dpmd
+etc/customization/settings/defaults/dpm.conf:etc/dpm.conf
+etc/init/dpmd.rc
 etc/permissions/com.qti.dpmframework.xml
 etc/permissions/dpmapi.xml
 framework/com.qti.dpmframework.jar
 framework/dpmapi.jar
 lib/com.qualcomm.qti.dpm.api@1.0.so
+lib/libdpmctmgr.so
+lib/libdpmfdmgr.so
+lib/libdpmframework.so
+lib/libdpmtcm.so
 lib64/com.qualcomm.qti.dpm.api@1.0.so
+lib64/libdpmctmgr.so
+lib64/libdpmfdmgr.so
+lib64/libdpmframework.so
+lib64/libdpmtcm.so
+-priv-app/dpmserviceapp/dpmserviceapp.apk
 
 # FFU
 etc/firmware/ufs/01AD-483238553734333031414D5220202020-D003.bin|516309bb7438524b2e4555cc3dcd452d94ea1b92
 etc/firmware/ufs/01CE-4B4C554347344A3145442D4230433120-0200.bin|e7f38785022e28539eb496865e10184faa3ab28a
-
-# FINGERPRINT_EXTENSION
-etc/permissions/com.fingerprints.extension.xml
--framework/com.fingerprints.extension.jar
-
-# DRM
-etc/firmware/tzwidevine.b00
-etc/firmware/tzwidevine.b01
-etc/firmware/tzwidevine.b02
-etc/firmware/tzwidevine.b03
-etc/firmware/tzwidevine.b04
-etc/firmware/tzwidevine.b05
-etc/firmware/tzwidevine.b06
-etc/firmware/tzwidevine.b07
-etc/firmware/tzwidevine.mdt
-etc/firmware/tzwvcpybuf.b00
-etc/firmware/tzwvcpybuf.b01
-etc/firmware/tzwvcpybuf.b02
-etc/firmware/tzwvcpybuf.b03
-etc/firmware/tzwvcpybuf.b04
-etc/firmware/tzwvcpybuf.b05
-etc/firmware/tzwvcpybuf.b06
-etc/firmware/tzwvcpybuf.b07
-etc/firmware/tzwvcpybuf.mdt
-
-# DRM_HDCP
-etc/firmware/tzhdcp.b00
-etc/firmware/tzhdcp.b01
-etc/firmware/tzhdcp.b02
-etc/firmware/tzhdcp.b03
-etc/firmware/tzhdcp.b04
-etc/firmware/tzhdcp.b05
-etc/firmware/tzhdcp.b06
-etc/firmware/tzhdcp.b07
-etc/firmware/tzhdcp.mdt
 
 # FINGERPRINT
 etc/firmware/tzfingerprint.b00
@@ -171,6 +159,11 @@ etc/firmware/tzfingerprint.b05
 etc/firmware/tzfingerprint.b06
 etc/firmware/tzfingerprint.b07
 etc/firmware/tzfingerprint.mdt
+
+# FINGERPRINT_EXTENSION
+etc/permissions/com.fingerprints.extension.xml
+-framework/com.fingerprints.extension.jar
+lib64/com.fingerprints.extension@1.0.so
 
 # FIRMWARE
 etc/firmware/cmnlib64.b00
@@ -246,7 +239,6 @@ bin/startup-logger
 etc/init/startup-logger.rc
 
 # LIGHT
-framework/android.hardware.light-V2.0-java.jar
 lib/vendor.semc.hardware.light@1.0.so
 lib64/vendor.semc.hardware.light@1.0.so
 
@@ -395,13 +387,21 @@ lib64/vendor.qti.ims.rcsconfig@1.0.so
 lib64/vendor.qti.imsrtpservice@1.0.so
 
 # QTI_PERF
+bin/perfservice
+etc/init/perfservice.rc
+lib/libqti-iopd-client_system.so
 lib/libqti-perfd-client_system.so
 lib/libqti-util_system.so
 lib/libqti_performance.so
+lib/vendor.qti.hardware.iop@1.0.so
+lib/vendor.qti.hardware.iop@2.0.so
 lib/vendor.qti.hardware.perf@1.0.so
+lib64/libqti-iopd-client_system.so
 lib64/libqti-perfd-client_system.so
 lib64/libqti-util_system.so
 lib64/libqti_performance.so
+lib64/vendor.qti.hardware.iop@1.0.so
+lib64/vendor.qti.hardware.iop@2.0.so
 lib64/vendor.qti.hardware.perf@1.0.so
 
 # QTI_QTEECONNECTOR
@@ -433,8 +433,25 @@ lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 lib64/vendor.somc.hardware.radio@1.0.so
 
-# SCD
-bin/scd
+# SECD
+etc/firmware/tzsuntory.b00
+etc/firmware/tzsuntory.b01
+etc/firmware/tzsuntory.b02
+etc/firmware/tzsuntory.b03
+etc/firmware/tzsuntory.b04
+etc/firmware/tzsuntory.b05
+etc/firmware/tzsuntory.b06
+etc/firmware/tzsuntory.b07
+etc/firmware/tzsuntory.mdt
+etc/firmware/tztpm.b00
+etc/firmware/tztpm.b01
+etc/firmware/tztpm.b02
+etc/firmware/tztpm.b03
+etc/firmware/tztpm.b04
+etc/firmware/tztpm.b05
+etc/firmware/tztpm.b06
+etc/firmware/tztpm.b07
+etc/firmware/tztpm.mdt
 
 # SEMC_IDD
 lib/vendor.semc.system.idd@1.0.so
@@ -474,33 +491,46 @@ somc/touch/images/splash.png:vendor/sony/touch/images/splash.png
 etc/init/taimport.rc
 lib64/libdevice_security_client.so
 
+# THERMAL
+lib64/vendor.semc.hardware.thermal@1.0.so
+
 # UDATEMISCTA
 bin/taimport
 bin/updatemiscta
 etc/init/updatemiscta.rc
+
+# Widevine
+etc/firmware/tzwidevine.b00
+etc/firmware/tzwidevine.b01
+etc/firmware/tzwidevine.b02
+etc/firmware/tzwidevine.b03
+etc/firmware/tzwidevine.b04
+etc/firmware/tzwidevine.b05
+etc/firmware/tzwidevine.b06
+etc/firmware/tzwidevine.b07
+etc/firmware/tzwidevine.mdt
+etc/firmware/tzwvcpybuf.b00
+etc/firmware/tzwvcpybuf.b01
+etc/firmware/tzwvcpybuf.b02
+etc/firmware/tzwvcpybuf.b03
+etc/firmware/tzwvcpybuf.b04
+etc/firmware/tzwvcpybuf.b05
+etc/firmware/tzwvcpybuf.b06
+etc/firmware/tzwvcpybuf.b07
+etc/firmware/tzwvcpybuf.mdt
 
 # WIFIDISPLAY
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so
 lib64/com.qualcomm.qti.wifidisplayhal@1.0.so
 lib/libhdcprx_module.so
 lib64/libhdcprx_module.so
-lib/libhdcptx_module.so
-lib64/libhdcptx_module.so
 lib/libstagefright_hdcp.so
 lib64/libstagefright_hdcp.so
+lib/libhdcptx_module.so
+lib64/libhdcptx_module.so
 lib/libwfdhdcpcp.so
 lib64/libwfdhdcpcp.so
 
-# AUDIO_SOUNDTRIGGER
-lib/vendor.qti.voiceprint@1.0.so
-lib64/vendor.qti.voiceprint@1.0.so
-
-# FINGERPRINT_EXTENSION
-lib64/com.fingerprints.extension@1.0.so
-
-# THERMAL
-lib64/vendor.semc.hardware.thermal@1.0.so
-
-#WIFI
+# WIFI
 lib64/vendor.somc.hardware.wifi.supplicant@2.0.so
 lib64/vendor.somc.hardware.wifi@2.0.so
