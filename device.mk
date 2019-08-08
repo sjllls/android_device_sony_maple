@@ -6,6 +6,9 @@ $(call inherit-product, vendor/sony/maple/maple-vendor.mk)
 ifeq ($(WITH_FDROID),true)
 $(call inherit-product, vendor/fdroid/fdroid-vendor.mk)
 endif
+ifeq ($(WITH_MICROG),true)
+$(call inherit-product, vendor/microg/microg-vendor.mk)
+endif
 
 ### DALVIK
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
@@ -13,8 +16,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 DEVICE_PATH := device/sony/maple
 
 # Device uses high-density artwork where available
-PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay

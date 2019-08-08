@@ -1,3 +1,7 @@
+# ADSP
+lib/libseemore.so
+lib64/libseemore.so
+
 # BLUETOOTH
 lib/com.qualcomm.qti.bluetooth_audio@1.0.so
 lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
@@ -50,16 +54,14 @@ lib/vendor.somc.hardware.camera.device@1.0.so
 lib/vendor.somc.hardware.camera.provider@1.0.so
 lib64/libcacao_client.so
 lib64/libcacao_pal.so
-lib/libjni_imageutil.so:vendor/lib/libjni_imageutil.so
-lib/libjni_snapcammosaic.so:vendor/lib/libjni_snapcammosaic.so
-lib/libjni_snapcamtinyplanet.so:vendor/lib/libjni_snapcamtinyplanet.so
-lib64/libjni_gallery_eglfence.so:vendor/lib64/libjni_gallery_eglfence.so
-lib64/libjni_gallery_filters.so:vendor/lib64/libjni_gallery_filters.so
-lib64/libjni_gallery_jpegstream.so:vendor/lib64/libjni_gallery_jpegstream.so
-lib64/libjni_imageutil.so:vendor/lib64/libjni_imageutil.so
-lib64/libjni_pacprocessor.so:vendor/lib64/libjni_pacprocessor.so
-lib64/libjni_snapcammosaic.so:vendor/lib64/libjni_snapcammosaic.so
-lib64/libjni_snapcamtinyplanet.so:vendor/lib64/libjni_snapcamtinyplanet.so
+
+# CAMERA_POSTPROCESSING
+lib/libjni_imageutil.so
+lib/libjni_snapcammosaic.so
+lib/libjni_snapcamtinyplanet.so
+lib64/libjni_imageutil.so
+lib64/libjni_snapcammosaic.so
+lib64/libjni_snapcamtinyplanet.so
 
 # CLEANLOSTFOUND
 etc/cleanlostfound.sh
@@ -311,10 +313,15 @@ lib64/vendor.qti.gnss@2.0.so
 lib64/vendor.qti.gnss@2.1.so
 
 # QTI_IMS
--priv-app/ims/ims.apk
+-app/uceShimService/uceShimService.apk
 etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
 etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
 etc/permissions/com.qualcomm.qti.imscmservice.xml
+framework/com.qualcomm.qti.imscmservice-V2.0-java.jar
+framework/com.qualcomm.qti.imscmservice-V2.1-java.jar
+framework/com.qualcomm.qti.uceservice-V2.0-java.jar
+framework/vendor.qti.ims.callinfo-V1.0-java.jar
+framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
 lib/com.qualcomm.qti.imscmservice@1.0.so
 lib/com.qualcomm.qti.imscmservice@2.0.so
 lib/com.qualcomm.qti.imscmservice@2.1.so
@@ -358,6 +365,7 @@ lib64/vendor.qti.hardware.radio.ims@1.4.so
 lib64/vendor.qti.ims.callinfo@1.0.so
 lib64/vendor.qti.ims.rcsconfig@1.0.so
 lib64/vendor.qti.imsrtpservice@1.0.so
+-priv-app/ims/ims.apk
 
 # QTI_PERF
 bin/perfservice
