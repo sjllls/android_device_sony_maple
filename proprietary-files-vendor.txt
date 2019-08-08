@@ -675,10 +675,6 @@ vendor/lib64/libbccQTI.so
 vendor/lib64/librs_adreno.so
 vendor/lib64/librs_adreno_sha1.so
 
-# Gatekeeper
-vendor/lib/hw/gatekeeper.msm8998.so
-vendor/lib64/hw/gatekeeper.msm8998.so
-
 # FFU
 vendor/bin/ffu|fe10f3c8d9e45831af0f10966e6d7c30a79f9fad
 
@@ -870,10 +866,10 @@ vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so
 vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so
 
 # QTI_GATEKEEPER
-# vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-# vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-# vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
-# vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
+vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # QTI_GNSS
 vendor/bin/hw/vendor.qti.gnss@1.0-service
@@ -947,22 +943,16 @@ vendor/lib64/libxtadapter.so
 vendor/lib64/libxtwifi_ulp_adaptor.so
 
 # QTI_KEYMASTER
-# vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
-# vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
-# vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
+vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
+vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libkeymasterprovision.so
 vendor/lib/libkeymasterutils.so
-vendor/lib/libqtikeymaster4.so
-# vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
-vendor/lib64/libqtikeymaster4.so
-
-# QTI_Keystore
-vendor/lib/hw/keystore.msm8998.so
-vendor/lib64/hw/keystore.msm8998.so
 
 # QTI_PERF
 vendor/bin/energy-awareness
