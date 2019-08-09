@@ -2,10 +2,6 @@
 lib/libseemore.so
 lib64/libseemore.so
 
-# AUDIO_SOUNDTRIGGER
-lib/vendor.qti.voiceprint@1.0.so
-lib64/vendor.qti.voiceprint@1.0.so
-
 # BLUETOOTH
 lib/com.qualcomm.qti.bluetooth_audio@1.0.so
 lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
@@ -137,46 +133,6 @@ lib64/libdpmfdmgr.so
 lib64/libdpmframework.so
 lib64/libdpmtcm.so
 -priv-app/dpmserviceapp/dpmserviceapp.apk
-etc/firmware/tzwidevine.b00
-etc/firmware/tzwidevine.b01
-etc/firmware/tzwidevine.b02
-etc/firmware/tzwidevine.b03
-etc/firmware/tzwidevine.b04
-etc/firmware/tzwidevine.b05
-etc/firmware/tzwidevine.b06
-etc/firmware/tzwidevine.b07
-etc/firmware/tzwidevine.mdt
-etc/firmware/tzwvcpybuf.b00
-etc/firmware/tzwvcpybuf.b01
-etc/firmware/tzwvcpybuf.b02
-etc/firmware/tzwvcpybuf.b03
-etc/firmware/tzwvcpybuf.b04
-etc/firmware/tzwvcpybuf.b05
-etc/firmware/tzwvcpybuf.b06
-etc/firmware/tzwvcpybuf.b07
-etc/firmware/tzwvcpybuf.mdt
-
-# DRM_HDCP
-etc/firmware/tzhdcp.b00
-etc/firmware/tzhdcp.b01
-etc/firmware/tzhdcp.b02
-etc/firmware/tzhdcp.b03
-etc/firmware/tzhdcp.b04
-etc/firmware/tzhdcp.b05
-etc/firmware/tzhdcp.b06
-etc/firmware/tzhdcp.b07
-etc/firmware/tzhdcp.mdt
-
-# FINGERPRINT
-etc/firmware/tzfingerprint.b00
-etc/firmware/tzfingerprint.b01
-etc/firmware/tzfingerprint.b02
-etc/firmware/tzfingerprint.b03
-etc/firmware/tzfingerprint.b04
-etc/firmware/tzfingerprint.b05
-etc/firmware/tzfingerprint.b06
-etc/firmware/tzfingerprint.b07
-etc/firmware/tzfingerprint.mdt
 
 # FFU
 etc/firmware/ufs/01AD-483238553734333031414D5220202020-D003.bin|516309bb7438524b2e4555cc3dcd452d94ea1b92
@@ -185,7 +141,6 @@ etc/firmware/ufs/01CE-4B4C554347344A3145442D4230433120-0200.bin|e7f38785022e2853
 # FINGERPRINT_EXTENSION
 etc/permissions/com.fingerprints.extension.xml
 -framework/com.fingerprints.extension.jar
-lib64/com.fingerprints.extension@1.0.so
 
 # FIRMWARE
 etc/firmware/cmnlib64.b00
@@ -375,6 +330,7 @@ lib/com.qualcomm.qti.imscmservice@2.1.so
 lib/com.qualcomm.qti.uceservice@2.0.so
 lib/lib-imscamera.so
 lib/lib-imsvideocodec.so
+lib/lib-imsvt.so
 lib/lib-imsvtextutils.so
 lib/lib-imsvtutils.so
 lib/libdiag_system.so
